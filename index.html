@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Landing Page</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#home" class="logo">WebApp</a>
+            <ul id="menu-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#description">Description</a></li>
+                <li><a href="#importance">Importance</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header" id="home">
+        <div class="container header-content">
+            <div class="header-text">
+                <h1>Discover the World of<br><span>Web Applications</span></h1>
+                <p>Explore how web applications can transform your business and enhance user experiences globally.</p>
+                <a href="#description" class="btn">Know More</a>
+            </div>
+            <div class="header-image">
+                <img src="image/image1.png" alt="Web Application Illustration">
+            </div>
+        </div>
+    </header>
+
+    <!-- Description Section -->
+    <section id="description">
+        <div class="container section-content">
+            <div class="section-image">
+                <img src="image/image2.png" alt="Description Image">
+            </div>
+            <div class="section-text">
+                <h2>What is a Web Application?</h2>
+                <p>A web application is software that runs on a web server and can be accessed through any web browser. It offers flexibility and accessibility, allowing users to interact with the application from any device connected to the internet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importance Section -->
+    <section id="importance">
+        <div class="container section-content">
+            <div class="section-text">
+                <h2>The Importance of Web Applications</h2>
+                <p>Web applications play a critical role in modern business operations by providing scalable, accessible, and cost-effective solutions. They facilitate seamless communication, data management, and service delivery, empowering businesses to reach a global audience efficiently.</p>
+            </div>
+            <div class="section-image">
+                <img src="image/image3.png" alt="Importance Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container section-content">
+            <div class="section-image">
+                <img src="image/image4.png" alt="Features Image">
+            </div>
+            <div class="section-text">
+                <h2>Key Features of Web Applications</h2>
+                <ul>
+                    <li>Cross-platform accessibility</li>
+                    <li>User-friendly interfaces</li>
+                    <li>Easy maintenance and updates</li>
+                    <li>Scalability and customization</li>
+                    <li>Integration capabilities</li>
+                    <li>Enhanced security measures</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 WebApp. All Rights Reserved.</p>
+            <p>Developed by: King Jannhel Driz</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu-links');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

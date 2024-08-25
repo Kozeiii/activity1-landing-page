@@ -1,0 +1,248 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    background-color: #1b2a49;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu-links {
+    list-style: none;
+    display: flex;
+}
+
+#menu-links li {
+    margin-left: 30px;
+}
+
+#menu-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+#menu-links li a:hover {
+    color: #1abc9c;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ecf0f1;
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.header-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.header-text h1 span {
+    color: #1abc9c;
+}
+
+.header-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(45deg, #1abc9c, #16a085);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #16a085, #1abc9c);
+}
+
+.header-image {
+    flex: 1;
+    text-align: center;
+}
+
+.header-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Section Styles */
+section {
+    padding: 100px 0;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.section-text {
+    flex: 1;
+    margin: 20px;
+}
+
+.section-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.section-text p, .section-text ul {
+    font-size: 18px;
+    color: #34495e;
+}
+
+.section-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section-image {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+.section-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.section-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1b2a49;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-content, .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1b2a49;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: height 0.3s;
+    }
+
+    #menu-links.active {
+        height: 200px;
+    }
+
+    #menu-links li {
+        margin: 15px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
