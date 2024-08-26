@@ -241,19 +241,17 @@ footer {
     gap: 20px;
 }
 
-.social-icons a {
-    display: inline-block;
-    transition: transform 0.3s;
+.social-link {
+    font-size: 40px;
+    color: #f5f5f5;
+    transition: transform 0.3s, color 0.3s;
 }
 
-.social-icons img {
-    width: 50px;
-    height: 50px;
+.social-link:hover {
+    transform: scale(1.2);
+    color: #fada0c;
 }
 
-.social-icons a:hover {
-    transform: scale(1.1);
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
